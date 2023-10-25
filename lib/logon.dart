@@ -1,25 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Register extends StatefulWidget {
-  const Register({super.key});
+class Login extends StatefulWidget {
+  const Login({super.key});
 
   @override
-  State<Register> createState() {
-    _RegisterState state = new _RegisterState();
-    return state;
-  }
+  State<Login> createState() => _LoginState();
 }
 
-class _RegisterState extends State<Register> {
-  int count = 1;
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    print("count = $count");
-    count++;
-    return MaterialApp(
+    return  MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Register"),
+          title: Text("Login"),
         ),
         body: Material(
           color:  new Color(0xfffce9d4),
@@ -28,7 +22,7 @@ class _RegisterState extends State<Register> {
             child: Center(
               child: LayoutBuilder(
                 builder: (context, constraints) {
-                  double cardHeight = constraints.maxHeight * 0.80;
+                  double cardHeight = constraints.maxHeight * 0.60;
                   return SingleChildScrollView(
                     child: SizedBox(
                       height: cardHeight,
@@ -44,7 +38,7 @@ class _RegisterState extends State<Register> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Text(
-                                "Sign in",
+                                "Login",
                                 textScaleFactor: 2.0,
                                 textDirection: TextDirection.ltr,
                               ),
@@ -57,26 +51,10 @@ class _RegisterState extends State<Register> {
                                 ),
                               ),
                               TextField(
-                                keyboardType: TextInputType.phone,
-                                decoration: InputDecoration(
-                                  labelText: 'Enter mobile',
-                                  hintText: 'your 10 digit mobile no',
-                                  border: OutlineInputBorder(),
-                                ),
-                              ),
-                              TextField(
                                 keyboardType: TextInputType.visiblePassword,
                                 decoration: InputDecoration(
                                   labelText: 'Enter Password',
                                   hintText: 'Password',
-                                  border: OutlineInputBorder(),
-                                ),
-                              ),
-                              TextField(
-                                keyboardType: TextInputType.visiblePassword,
-                                decoration: InputDecoration(
-                                  labelText: 'Enter Confirm password',
-                                  hintText: 'Confirm password',
                                   border: OutlineInputBorder(),
                                 ),
                               ),
@@ -88,7 +66,7 @@ class _RegisterState extends State<Register> {
                                     color: Color(0xffeb6664),
                                     textColor: Color(0xffffffff),
                                     onPressed: () {},
-                                    child: Text("Register"),
+                                    child: Text("Login"),
                                   ),
                                 ),
                               ),

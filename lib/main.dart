@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'logon.dart';
 import 'register.dart';
 void main() {
-  runApp(Register());
+  runApp(Login());
 }
 class WelcomeScreen extends StatelessWidget {
 
@@ -51,6 +52,14 @@ class WelcomeScreen extends StatelessWidget {
                         textColor: new Color(0xffffffff),
                         onPressed: () {}, child: Text("Register")),
                   )),
+                  TextField(
+                    keyboardType: TextInputType.visiblePassword,
+                    decoration: InputDecoration(
+                      labelText: 'Enter Password',
+                      hintText: 'Password',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
                   Expanded(flex:1,child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: MaterialButton(
