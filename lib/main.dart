@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:project1/accounts.dart';
 import 'logon.dart';
 import 'register.dart';
+import 'add_edit_account.dart';
 void main() {
-  runApp(Accounts());
+  runApp(AddEditAccount());
 }
+
 class WelcomeScreen extends StatelessWidget {
 
   double ScreenHeight = 0.0,ScreenWidth = 0;

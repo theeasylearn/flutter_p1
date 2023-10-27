@@ -54,6 +54,7 @@ class _RegisterState extends State<Register> {
                                   labelText: 'Enter Email Address',
                                   hintText: 'your email address',
                                   border: OutlineInputBorder(),
+                                    prefixIcon: Icon(Icons.email)
                                 ),
                               ),
                               TextField(
@@ -62,6 +63,7 @@ class _RegisterState extends State<Register> {
                                   labelText: 'Enter mobile',
                                   hintText: 'your 10 digit mobile no',
                                   border: OutlineInputBorder(),
+                                    prefixIcon: Icon(Icons.call)
                                 ),
                               ),
                               TextField(
@@ -70,6 +72,7 @@ class _RegisterState extends State<Register> {
                                   labelText: 'Enter Password',
                                   hintText: 'Password',
                                   border: OutlineInputBorder(),
+                                    prefixIcon: Icon(Icons.password)
                                 ),
                               ),
                               TextField(
@@ -78,6 +81,7 @@ class _RegisterState extends State<Register> {
                                   labelText: 'Enter Confirm password',
                                   hintText: 'Confirm password',
                                   border: OutlineInputBorder(),
+                                    prefixIcon: Icon(Icons.password)
                                 ),
                               ),
                               SizedBox(

@@ -48,6 +48,7 @@ class _LoginState extends State<Login> {
                                   labelText: 'Enter Email Address',
                                   hintText: 'your email address',
                                   border: OutlineInputBorder(),
+                                    prefixIcon: Icon(Icons.email)
                                 ),
                               ),
                               TextField(
@@ -56,6 +57,7 @@ class _LoginState extends State<Login> {
                                   labelText: 'Enter Password',
                                   hintText: 'Password',
                                   border: OutlineInputBorder(),
+                                    prefixIcon: Icon(Icons.password)
                                 ),
                               ),
                               SizedBox(
